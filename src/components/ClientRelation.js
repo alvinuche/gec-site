@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "./Layout";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -20,7 +20,7 @@ const containerVariants = {
 			damping: 25,
 			mass: 2,
 			// delay: 1.5,
-			stiffness: 130,
+			stiffness: 100,
 		},
 	},
 };

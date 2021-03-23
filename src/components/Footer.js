@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import { Phone, Email, SocialIcons } from "./Icons";
@@ -9,7 +9,7 @@ import logo from "../assets/images/logo.svg";
 
 const Footer = () => {
 	const [name, setName] = useState("");
-	const { ref, inView } = useInView({
+	const { ref } = useInView({
 		threshold: 0.5,
 		triggerOnce: true,
 	});
@@ -161,37 +161,33 @@ const Footer = () => {
 
 					<div className="policy-container" ref={ref}>
 						<footer className="policy-footer">
-							{inView && (
-								<>
-									<motion.div
-										initial={{ x: "-500" }}
-										animate={{ x: 0 }}
-										transition={{ type: "spring", stiffness: 120 }}
-									>
-										<Link to="/">
-											<img src={logo} alt="logo" className="logo" />
-										</Link>
-										<p>&copy; Global Entrepreneurship Capital group {2021}</p>
-									</motion.div>
-									<motion.div
-										initial={{ x: "500" }}
-										animate={{ x: 0 }}
-										transition={{ type: "spring", stiffness: 120, delay: 0.5 }}
-									>
-										<ul>
-											<li>
-												<Link to="">terms & conditions</Link>
-											</li>
-											<li>
-												<Link to="">privacy policy</Link>
-											</li>
-											<li>
-												<Link to=""></Link>
-											</li>
-										</ul>
-									</motion.div>
-								</>
-							)}
+							<div
+								initial={{ x: "-500" }}
+								animate={{ x: 0 }}
+								transition={{ type: "spring", stiffness: 120 }}
+							>
+								<Link to="/">
+									<img src={logo} alt="logo" className="logo" />
+								</Link>
+								<p>&copy; Global Entrepreneurship Capital group {2021}</p>
+							</div>
+							<div
+								initial={{ x: "500" }}
+								animate={{ x: 0 }}
+								transition={{ type: "spring", stiffness: 120, delay: 0.5 }}
+							>
+								<ul>
+									<li>
+										<Link to="">terms & conditions</Link>
+									</li>
+									<li>
+										<Link to="">privacy policy</Link>
+									</li>
+									<li>
+										<Link to=""></Link>
+									</li>
+								</ul>
+							</div>
 						</footer>
 					</div>
 				</div>
