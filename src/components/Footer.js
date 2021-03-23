@@ -196,6 +196,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</Layout>
+			<div className="scroll-up"></div>
 		</footer>
 	);
 };
