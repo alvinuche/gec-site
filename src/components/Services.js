@@ -39,7 +39,7 @@ const Services = () => {
 				damping={0.1}
 				duration={1000}
 				direction={"up"}
-				fraction={0.1}
+				// fraction={0.1}
 				triggerOnce={true}
 			>
 				<div className="section-container">

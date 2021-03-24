@@ -14,6 +14,8 @@ const containerVariants = {
 		opacity: 1,
 		transition: {
 			type: "tween",
+			duration: 0.5,
+			delay: 0.5,
 			when: "beforeChildren",
 			staggerChildren: 0.5,
 		},
@@ -28,8 +30,7 @@ const itemVariants = {
 		opacity: 1,
 		transition: {
 			type: "tween",
-			duration: 2,
-			delay: 0.5,
+			duration: 0.8,
 		},
 	},
 };

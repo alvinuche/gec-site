@@ -393,15 +393,16 @@ header {
 /* SVG CHEVRON */
 
 .chevron-wrapper {
+	text-align: center;
 	position: absolute;
-	top: 90vh;
+	top: 85vh;
 	left: 0;
 	width: 100%;
 }
 
 .chevron {
 	position: relative;
-	left: 50%;
+	/* left: 50%; */
 }
 
 svg .top-chevron {
@@ -518,6 +519,7 @@ svg .bottom-chevron {
 .section-header {
 	max-width: 30rem;
 	margin: 0 auto 2rem;
+	padding: 0 1rem;
 }
 
 .row--container {

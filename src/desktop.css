@@ -9,9 +9,9 @@ Landscape Resize
 	.container {
 		width: min(91%, var(--max-width));
 	}
-	.container--fluid {
-		/* width: min(95%, var(--max-width)); */
-	}
+	/* .container--fluid {
+		width: min(95%, var(--max-width));
+	} */
 
 	.reset {
 		padding-right: 0;
@@ -239,6 +239,11 @@ Landscape Resize
 
 /* SERVICES SECTION */
 @media screen and (min-width: 48em) {
+	.section-header {
+		max-width: 40rem;
+		margin: 0 auto 2rem;
+		padding: 0 1rem;
+	}
 	.row--container {
 		width: 68vw;
 	}
