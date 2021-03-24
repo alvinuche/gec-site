@@ -59,7 +59,7 @@ const Header = () => {
 					<div
 						className="carousel-bg"
 						style={{
-							background: `linear-gradient(rgba(19, 18, 27, 0.75), rgba(19, 18, 27, 0.75)), url(${home_bg}) top right/cover no-repeat`,
+							background: `linear-gradient(rgba(19, 18, 27, 0.65), rgba(19, 18, 27, 0.65)), url(${home_bg}) center/cover no-repeat`,
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption container">
@@ -96,7 +96,7 @@ const Header = () => {
 					<div
 						className="carousel-bg"
 						style={{
-							background: `linear-gradient(rgba(19, 18, 27, 0.75), rgba(19, 18, 27, 0.75)), url(${estate_bg}) center/cover no-repeat`,
+							background: `linear-gradient(rgba(19, 18, 27, 0.65), rgba(19, 18, 27, 0.65)), url(${estate_bg}) center/cover no-repeat`,
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption">
@@ -115,7 +115,7 @@ const Header = () => {
 					<div
 						className="carousel-bg"
 						style={{
-							background: `linear-gradient(rgba(19, 18, 27, 0.75), rgba(19, 18, 27, 0.75)), url(${construction_bg}) top right/cover no-repeat`,
+							background: `linear-gradient(rgba(19, 18, 27, 0.65), rgba(19, 18, 27, 0.65)), url(${construction_bg}) center/cover no-repeat`,
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption">
