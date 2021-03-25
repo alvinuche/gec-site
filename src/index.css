@@ -84,7 +84,7 @@ div {
 }
 body {
 	line-height: 1.6;
-	font-size: 0.875rem;
+	font-size: 0.9rem;
 	color: var(--clr-grey-1);
 	background-color: var(--clr-white);
 	overflow-x: hidden;
@@ -613,6 +613,9 @@ svg .bottom-chevron {
 .footer-section {
 	background-color: var(--clr-primary-1);
 	color: var(--clr-white);
+}
+.footer-section a {
+	font-size: 0.875rem;
 }
 .footer-container-figure {
 	width: 90vw;

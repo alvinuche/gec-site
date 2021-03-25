@@ -56,7 +56,7 @@ const btnVariants = {
 const Header = () => {
 	return (
 		<header className="carousel">
-			<Carousel interval={3000} controls={false}>
+			<Carousel interval={null} controls={false}>
 				<Carousel.Item interval={6000} className="carousel-item">
 					<div
 						className="carousel-bg"
