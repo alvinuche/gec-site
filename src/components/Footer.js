@@ -124,21 +124,21 @@ const Footer = () => {
 							triggerOnce={true}
 						>
 							<div className="social-links">
-								<form class="grocery-form">
+								<form className="grocery-form">
 									<h4>newsletter</h4>
 									<p>Join our mailing list for news and articles.</p>
-									<div class="form--control">
+									<div className="form--control">
 										<input
 											type="email"
 											value={name}
 											id="grocery"
 											placeholder="enter address"
-											readonly
-											autocomplete="off"
+											readOnly
+											autoComplete="off"
 											onChange={handleChange}
 											// onfocus="this.removeAttribute('readonly')"
 										/>
-										<button type="submit" class="submit-btn">
+										<button type="submit" className="submit-btn">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="16"

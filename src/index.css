@@ -173,9 +173,9 @@ a:hover {
 	border: none;
 }
 
-.btn:hover {
+/* .btn:hover {
 	color: var(--clr-primary-1);
-}
+} */
 
 /*
 =============== 
@@ -348,8 +348,9 @@ header {
 	display: none;
 }
 .carousel-bg {
-	min-height: 100vh;
+	height: 100%;
 	width: 100%;
+	min-height: 100vh;
 }
 
 .carousel-caption {
@@ -362,6 +363,13 @@ header {
 	padding: 0;
 	width: 25rem;
 	z-index: 3;
+}
+
+.carousel-inner {
+	/*just incase the flash (style above) comes back*/
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-perspective: 2000;
+	-webkit-backface-visibility: hidden;
 }
 
 .p-container p {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SideHeader from "./Sidebar";
@@ -7,21 +7,29 @@ import logo from "../assets/images/logo.svg";
 import hamburger from "../assets/images/hamburger.svg";
 
 const Nav = () => {
+	const [windowWidth, setWindowWidth] = useState(0);
 	const slideContainer = useRef(null);
 	const linksContainer = useRef(null);
 	const dropdownContainer = useRef(null);
 
+	const init = () => {
+		setWindowWidth(window.innerWidth);
+	};
+
 	const navigationHandle = () => {
-		if (linksContainer.current.classList.contains("links-container-show")) {
-			linksContainer.current.classList.remove("links-container-show");
-			setTimeout(() => {
-				slideContainer.current.classList.remove("slide-show");
-			}, 500);
-		} else {
-			slideContainer.current.classList.add("slide-show");
-			linksContainer.current.classList.add("links-container-show");
+		if (windowWidth < 768) {
+			if (linksContainer.current.classList.contains("links-container-show")) {
+				linksContainer.current.classList.remove("links-container-show");
+				setTimeout(() => {
+					slideContainer.current.classList.remove("slide-show");
+				}, 500);
+			} else {
+				slideContainer.current.classList.add("slide-show");
+				linksContainer.current.classList.add("links-container-show");
+			}
 		}
 	};
+
 	const dropdownHandle = () => {
 		dropdownContainer.current.classList.toggle("dropdown-content-show");
 	};
@@ -31,11 +39,13 @@ const Nav = () => {
 		setTimeout(() => {
 			slideContainer.current.classList.remove("slide-show");
 		}, 500);
+		setWindowWidth(window.innerWidth);
 	};
 
 	useEffect(() => {
 		const node = dropdownContainer.current;
 		window.addEventListener("resize", windowResize);
+		init();
 
 		node.addEventListener("click", navigationHandle);
 		return () => {

@@ -2,35 +2,37 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Carousel } from "react-bootstrap";
-import home_bg from "../assets/images/home-bg-lg.jpg";
+// import home_bg from "../assets/images/home-bg-lg.jpg";
+import build_bg from "../assets/images/build-bg.jpg";
 import estate_bg from "../assets/images/estate-bg-lg.jpg";
 import construction_bg from "../assets/images/construction-bg-lg.jpg";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const containerVariants = {
 	hidden: {
-		opacity: 0,
+		x: "100vw",
 	},
 	visible: {
-		opacity: 1,
+		x: 0,
 		transition: {
-			type: "tween",
-			duration: 0.5,
+			type: "spring",
+			duration: 1,
 			delay: 0.5,
 			when: "beforeChildren",
-			staggerChildren: 0.5,
+			staggerChildren: 0.2,
 		},
 	},
 };
 
 const itemVariants = {
 	hidden: {
-		opacity: 0,
+		x: "100vw",
 	},
 	visible: {
-		opacity: 1,
+		x: 0,
 		transition: {
-			type: "tween",
-			duration: 0.8,
+			type: "spring",
+			stiffness: 30,
 		},
 	},
 };
@@ -45,7 +47,7 @@ const btnVariants = {
 			type: "spring",
 			damping: 25,
 			mass: 2,
-			delay: 1.5,
+			delay: 2,
 			stiffness: 100,
 		},
 	},
@@ -54,12 +56,12 @@ const btnVariants = {
 const Header = () => {
 	return (
 		<header className="carousel">
-			<Carousel interval={5000} controls={false}>
-				<Carousel.Item className="carousel-item">
+			<Carousel interval={3000} controls={false}>
+				<Carousel.Item interval={6000} className="carousel-item">
 					<div
 						className="carousel-bg"
 						style={{
-							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.5)), url(${home_bg}) center/cover no-repeat`,
+							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.6)), url(${build_bg}) center/cover no-repeat`,
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption container">
@@ -96,17 +98,35 @@ const Header = () => {
 					<div
 						className="carousel-bg"
 						style={{
-							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.5)), url(${estate_bg}) center/cover no-repeat`,
+							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.3)), url(${estate_bg}) center/cover no-repeat`,
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption">
-						<h1>Real Estate</h1>
+						<Fade
+							// cascade={true}
+							damping={0.1}
+							duration={1000}
+							direction={"left"}
+							fraction={0.1}
+							triggerOnce={true}
+						>
+							<h1>Real Estate</h1>
+						</Fade>
 						<div className="p-container">
-							<p>
-								Know how to maximize the value of your property. our agents have
-								the knowledge, skills, and experience to help maximize the value
-								of your property.
-							</p>
+							<Fade
+								// cascade={true}
+								damping={0.1}
+								duration={1000}
+								direction={"up"}
+								fraction={0.1}
+								triggerOnce={true}
+							>
+								<p>
+									Know how to maximize the value of your property. our agents
+									have the knowledge, skills, and experience to help maximize
+									the value of your property.
+								</p>
+							</Fade>
 						</div>
 					</Carousel.Caption>
 				</Carousel.Item>
@@ -115,18 +135,34 @@ const Header = () => {
 					<div
 						className="carousel-bg"
 						style={{
-							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.5)), url(${construction_bg}) center/cover no-repeat`,
+							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.3)), url(${construction_bg}) center/cover no-repeat`,
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption">
-						<h1>Construction</h1>
-						<div className="p-container">
-							<p>
-								We are the major distributors of building materials (such as
-								Cement: Dangote, BUA, Unicem). Rods: 12mm, 10mm, 8mm, ¼ rods,
-								and binding wire.
-							</p>
-						</div>
+						<Fade
+							damping={0.1}
+							duration={1000}
+							direction={"right"}
+							fraction={0.1}
+							triggerOnce={true}
+						>
+							<h1>Construction</h1>
+						</Fade>
+						<Fade
+							damping={0.1}
+							duration={1000}
+							direction={"left"}
+							fraction={0.1}
+							triggerOnce={true}
+						>
+							<div className="p-container">
+								<p>
+									We are the major distributors of building materials (such as
+									Cement: Dangote, BUA, Unicem). Rods: 12mm, 10mm, 8mm, ¼ rods,
+									and binding wire.
+								</p>
+							</div>
+						</Fade>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
