@@ -119,7 +119,7 @@ Landscape Resize
 		left: 0;
 		bottom: -1rem;
 		width: 100%;
-		height: 3px;
+		height: 4px;
 		background-image: linear-gradient(
 			180deg,
 			rgba(106, 242, 216, 0.7) 17.95%,
@@ -218,7 +218,7 @@ Landscape Resize
 		padding: 4rem 3rem;
 		width: min(95%, 36rem);
 		/* max-height: 95%; */
-		right: -5.5rem;
+		right: -5rem;
 	}
 }
 
@@ -289,5 +289,18 @@ Landscape Resize
 	}
 	.policy-container {
 		width: 85vw;
+	}
+}
+
+/*
+================= 
+PAGES STYLES
+=================
+*/
+/* CONTACT PAGE */
+
+@media screen and (min-width: 48em) {
+	.page--container {
+		padding: 0 1.85rem;
 	}
 }

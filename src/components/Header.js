@@ -6,7 +6,7 @@ import { Carousel } from "react-bootstrap";
 import build_bg from "../assets/images/build-bg.jpg";
 import estate_bg from "../assets/images/estate-bg-lg.jpg";
 import construction_bg from "../assets/images/construction-bg-lg.jpg";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const containerVariants = {
 	hidden: {
@@ -16,8 +16,8 @@ const containerVariants = {
 		x: 0,
 		transition: {
 			type: "spring",
-			duration: 1,
-			delay: 0.5,
+			duration: 0.5,
+			delay: 1.5,
 			when: "beforeChildren",
 			staggerChildren: 0.2,
 		},
@@ -47,7 +47,7 @@ const btnVariants = {
 			type: "spring",
 			damping: 25,
 			mass: 2,
-			delay: 2,
+			delay: 2.5,
 			stiffness: 100,
 		},
 	},
@@ -56,8 +56,8 @@ const btnVariants = {
 const Header = () => {
 	return (
 		<header className="carousel">
-			<Carousel interval={null} controls={false}>
-				<Carousel.Item interval={6000} className="carousel-item">
+			<Carousel interval={5000} controls={false}>
+				<Carousel.Item interval={8000} className="carousel-item">
 					<div
 						className="carousel-bg"
 						style={{
@@ -110,7 +110,7 @@ const Header = () => {
 							fraction={0.1}
 							triggerOnce={true}
 						>
-							<h1>Real Estate</h1>
+							<h2 className="sub-heading">Real Estate</h2>
 						</Fade>
 						<div className="p-container">
 							<Fade
@@ -146,7 +146,7 @@ const Header = () => {
 							fraction={0.1}
 							triggerOnce={true}
 						>
-							<h1>Construction</h1>
+							<h2 className="sub-heading">Construction</h2>
 						</Fade>
 						<Fade
 							damping={0.1}

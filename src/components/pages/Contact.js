@@ -4,41 +4,52 @@ import { motion } from "framer-motion";
 
 const containerVariants = {
 	hidden: {
-		x: 1000,
+		x: "100vw",
 	},
 	visible: {
 		x: 0,
 		transition: {
 			type: "spring",
-			stiffness: 120,
-			delay: 0.3,
+			stiffness: 40,
+			// delay: 0.5,
 			duration: 1.5,
 		},
+	},
+	exit: {
+		x: "-100vw",
+		transition: { ease: "easeInOut" },
 	},
 };
 
 const Contact = () => {
 	return (
-		// <Layout>
-		<div style={{ paddingTop: "5rem", backgroundColor: "hsl(210, 22%, 49%)" }}>
-			<Layout>
-				<motion.div
-					variants={containerVariants}
-					initial="hidden"
-					animate="visible"
-				>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-						inventore dolore doloremque ea pariatur accusamus laboriosam nisi,
-						nostrum assumenda numquam sunt dignissimos asperiores eaque, neque
-						modi. Eius et ratione nulla eveniet. Ab fuga officia atque quae
-						ratione minus, doloremque accusamus dolore, optio nam ea architecto
-						odit molestiae quidem sapiente temporibus?
-					</p>
+		<motion.div
+			variants={containerVariants}
+			initial="hidden"
+			animate="visible"
+			exit="exit"
+		>
+			<Layout section="page-contact-section" reset="reset">
+				<motion.div className="page-container page--container">
+					<div className="page-container-header">
+						<h1>contact us</h1>
+					</div>
 				</motion.div>
 			</Layout>
-		</div>
-		// </Layout>
+			<Layout section="page-contact-main" reset="reset">
+				<div className="page--container">
+					<div className="page-contact-main-header">
+						<h2>How to find Us</h2>
+						<p>
+							If you have any questions or queries, a member of staff will
+							always be there to help. Feel free to get in touch with Us by
+							telephone or email and we will be sure to get back to you as soon
+							as possible
+						</p>
+					</div>
+				</div>
+			</Layout>
+		</motion.div>
 	);
 };
 

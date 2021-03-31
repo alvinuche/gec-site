@@ -27,7 +27,7 @@ const Intro = () => {
 	});
 
 	return (
-		<Layout reset="reset">
+		<Layout reset="reset" section="intro-section">
 			<div className="player-wrapper" ref={ref}>
 				<video
 					className="video-container"

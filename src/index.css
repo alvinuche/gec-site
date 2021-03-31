@@ -86,7 +86,8 @@ body {
 	line-height: 1.6;
 	font-size: 0.9rem;
 	color: var(--clr-grey-1);
-	background-color: var(--clr-white);
+	/* background-color: var(--clr-white); */
+	background-color: rgba(4, 16, 16, 0.8);
 	overflow-x: hidden;
 	position: relative;
 }
@@ -108,14 +109,14 @@ h4 {
 }
 
 h1 {
-	font-size: clamp(2.5rem, 4vw, 4rem);
+	font-size: clamp(2.5rem, 4.3vw, 4.3rem);
 }
 
 h2 {
-	font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+	font-size: clamp(1.7rem, 2.5vw, 2.5rem);
 }
 h3 {
-	font-size: clamp(1.4rem, 2.2vw, 2.2rem);
+	font-size: clamp(1.5rem, 2.2vw, 2.2rem);
 }
 h4 {
 	font-size: clamp(0.875rem, 1vw, 1rem);
@@ -176,6 +177,9 @@ a:hover {
 /* .btn:hover {
 	color: var(--clr-primary-1);
 } */
+.sub-heading {
+	margin-bottom: 1rem;
+}
 
 /*
 =============== 
@@ -252,7 +256,7 @@ header {
 	position: fixed;
 	background-color: var(--clr-grey-8);
 	height: 100%;
-	width: 80%;
+	width: 80vw;
 	display: grid;
 	grid-template-rows: auto 1fr;
 	/* row-gap: 1rem; */
@@ -368,7 +372,7 @@ header {
 .carousel-inner {
 	/*just incase the flash (style above) comes back*/
 	background: rgba(0, 0, 0, 0.5);
-	-webkit-perspective: 2000;
+	-webkit-perspective: 2000px;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -431,6 +435,9 @@ svg .bottom-chevron {
 }
 
 /* MAIN AND INTRO CONTENT */
+.intro-section {
+	background-color: var(--clr-white);
+}
 
 .player-wrapper {
 	min-height: 50vh;
@@ -736,4 +743,59 @@ svg .bottom-chevron {
 
 .section--reset {
 	padding-bottom: 0;
+}
+
+/*
+================= 
+PAGES STYLES
+=================
+*/
+
+/* CONTACT PAGE */
+
+.page-contact-section {
+	/* background-color: var(--clr-grey-9); */
+	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
+		url(./assets/images/pages_images/contact-two.webp) 80% 80% / cover no-repeat;
+	min-height: 30vh;
+}
+.page-container {
+	margin-top: 3rem;
+}
+.page-container-header {
+	min-height: 20vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.page-container-header h1 {
+	color: var(--clr-grey-8);
+	margin-bottom: 0;
+}
+.page-contact-main {
+	background-color: var(--clr-grey-10);
+}
+.page-contact-main-header {
+	max-width: 40rem;
+}
+.page-contact-main-header h2 {
+	margin-bottom: 1rem;
+	text-transform: initial;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+.page-contact-main-header h2::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0.3rem;
+	height: 8px;
+	width: 100%;
+	background-image: linear-gradient(
+		360deg,
+		rgba(106, 242, 216, 0.7) 17.95%,
+		rgba(30, 119, 165, 0.3) 105.5%
+	);
+	z-index: -1;
 }

@@ -138,7 +138,11 @@ const Footer = () => {
 											onChange={handleChange}
 											// onfocus="this.removeAttribute('readonly')"
 										/>
-										<button type="submit" className="submit-btn">
+										<button
+											type="submit"
+											className="submit-btn"
+											aria-label="submit"
+										>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												width="16"

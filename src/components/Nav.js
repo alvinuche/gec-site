@@ -7,13 +7,13 @@ import logo from "../assets/images/logo.svg";
 import hamburger from "../assets/images/hamburger.svg";
 
 const Nav = () => {
-	const [windowWidth, setWindowWidth] = useState(0);
+	const [windowWidth, setWindowWidth] = useState(window.outerWidth);
 	const slideContainer = useRef(null);
 	const linksContainer = useRef(null);
 	const dropdownContainer = useRef(null);
 
 	const init = () => {
-		setWindowWidth(window.innerWidth);
+		setWindowWidth(window.outerWidth);
 	};
 
 	const navigationHandle = () => {
@@ -59,7 +59,7 @@ const Nav = () => {
 			id="nav"
 			initial={{ y: -200 }}
 			animate={{ y: 0 }}
-			transition={{ delay: 0.3, type: "spring", stiffness: 120 }}
+			transition={{ delay: 1.5, type: "spring", stiffness: 120 }}
 		>
 			<div
 				className="slider"
@@ -72,7 +72,12 @@ const Nav = () => {
 						<Link to="/">
 							<img src={logo} alt="logo" className="logo" />
 						</Link>
-						<button className="nav-toggle" onClick={navigationHandle}>
+						<button
+							className="nav-toggle"
+							type="button"
+							aria-label="hamburger"
+							onClick={navigationHandle}
+						>
 							<img src={hamburger} alt="hamburger" />
 						</button>
 					</div>
@@ -83,7 +88,7 @@ const Nav = () => {
 						<ul className="links">
 							<li onClick={navigationHandle}>
 								<Link to="/" className="link-item">
-									about us
+									about
 								</Link>
 							</li>
 							<li className="dropdown reset" onClick={dropdownHandle}>
