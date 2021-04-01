@@ -269,7 +269,7 @@ Landscape Resize
 	}
 	.client-header {
 		width: 85vw;
-		margin: 1.5rem auto;
+		margin: 3rem auto 1.5rem;
 	}
 
 	.client-card {
@@ -302,5 +302,10 @@ PAGES STYLES
 @media screen and (min-width: 48em) {
 	.page--container {
 		padding: 0 1.85rem;
+	}
+	.contact-center {
+		width: 85vw;
+		margin: 0 auto;
+		max-width: var(--max-width);
 	}
 }

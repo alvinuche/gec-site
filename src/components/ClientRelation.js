@@ -75,13 +75,8 @@ const ClientRelation = () => {
 					>
 						<figure>
 							<div className="client-card">
-								<img src={completed} alt={completed} />
-								<figcaption>
-									<span style={{ fontWeight: count === 150 ? 700 : "inherit" }}>
-										{count}+
-									</span>{" "}
-									completed projects
-								</figcaption>
+								<img src={efficient} alt={efficient} />
+								<figcaption>Efficient Delivery</figcaption>
 							</div>
 						</figure>
 					</Zoom>
@@ -108,10 +103,15 @@ const ClientRelation = () => {
 						fraction={0.1}
 						triggerOnce={true}
 					>
-						<figure>
+						<figure className="figure-client-card">
 							<div className="client-card">
-								<img src={efficient} alt={efficient} />
-								<figcaption>Efficient Delivery</figcaption>
+								<img src={completed} alt={completed} />
+								<figcaption>
+									<span style={{ fontWeight: count === 150 ? 700 : "inherit" }}>
+										{count}+
+									</span>{" "}
+									completed projects
+								</figcaption>
 							</div>
 						</figure>
 					</Zoom>

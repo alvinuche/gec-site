@@ -147,7 +147,7 @@ const Nav = () => {
 
 					{/* call to action button */}
 					<div className="call--action">
-						<Link role="button" className="btn" to="/">
+						<Link role="button" className="btn" to="/contact">
 							work with us
 						</Link>
 					</div>

@@ -12,6 +12,11 @@ import efficient from "../assets/images/efficient.svg";
 import satisfaction from "../assets/images/satisfaction.svg";
 import trust from "../assets/images/trust.svg";
 
+// PAGE CONTACT DATA
+import pin from "../assets/images/pages_images/pin.svg";
+import telephone from "../assets/images/pages_images/telephone.svg";
+import location from "../assets/images/pages_images/location.svg";
+
 export const servicesData = [
 	{
 		url: "",
@@ -65,5 +70,26 @@ export const relationalData = [
 		url: satisfaction,
 		caption: `customer satisfaction`,
 		num: "100% ",
+	},
+];
+
+export const pageContactData = [
+	{
+		image: pin,
+		title: "head office",
+		caption: "Amakaohia Uratta Layout Owerri, Imo state.",
+		secondCaption: "",
+	},
+	{
+		image: telephone,
+		title: "hotlines",
+		caption: "+234 803 379 7182",
+		secondCaption: "+234 813 858 5976",
+	},
+	{
+		image: location,
+		title: "branch location",
+		caption: "32 Nwaoriemkpu Ekwe Isu L.G.A Imo State.",
+		secondCaption: "",
 	},
 ];

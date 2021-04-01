@@ -22,7 +22,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer>
+		<footer className="footer">
 			<Layout
 				section="footer-section"
 				reset="reset"

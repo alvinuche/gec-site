@@ -87,7 +87,7 @@ const Header = () => {
 							initial="hidden"
 							animate="visible"
 						>
-							<Link to="/" className="btn btn--lg">
+							<Link to="/contact" className="btn btn--lg">
 								work with us
 							</Link>
 						</motion.div>
