@@ -180,9 +180,9 @@ a:hover {
 	border: none;
 }
 
-/* .btn:hover {
-	color: var(--clr-primary-1);
-} */
+.btn:hover {
+	color: var(--clr-white);
+}
 .sub-heading {
 	margin-bottom: 1rem;
 }
@@ -381,23 +381,41 @@ header {
 	-webkit-perspective: 2000px;
 	-webkit-backface-visibility: hidden;
 }
-
+.sub-header {
+	color: var(--clr-white);
+	display: inline-block;
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+	font-size: 0.875rem;
+	letter-spacing: 1.5px;
+}
+.header-title {
+	color: transparent;
+	background-image: linear-gradient(
+		90deg,
+		rgba(106, 242, 216, 1) 17.95%,
+		rgba(30, 119, 165, 0.9) 105.5%
+	);
+	background-clip: text;
+}
 .p-container p {
 	width: 80%;
 	color: var(--clr-white);
 }
 .carousel-indicators {
-	right: initial;
+	left: initial;
 	bottom: initial;
-	left: 5%;
-	top: 32rem;
-	margin: 0;
+	top: 50%;
+	right: 7%;
+	margin: auto;
+	flex-direction: column;
 	z-index: 6;
 }
 .carousel-indicators li {
 	box-sizing: initial;
 	width: 0.5rem;
 	height: 0.5rem;
+	margin: 0.1rem auto;
 	border: 1px solid var(--clr-white);
 	background-clip: unset;
 	border-radius: 50%;
@@ -677,7 +695,7 @@ svg .bottom-chevron {
 }
 #grocery {
 	padding: 0.25rem 0 0.25rem 1rem;
-	background: var(--clr-grey-9);
+	background: var(--clr-grey-10);
 	border-top-left-radius: var(--radius);
 	border-bottom-left-radius: var(--radius);
 	border-color: transparent;
@@ -705,7 +723,7 @@ svg .bottom-chevron {
 .social-links-wrapper {
 	display: flex;
 	justify-content: space-between;
-	max-width: 65vw;
+	max-width: 17rem;
 }
 
 .social-links-wrapper .footer-social-links {
@@ -766,27 +784,23 @@ PAGES STYLES
 =================
 */
 
-/* CONTACT PAGE */
-
+/* CONTACT && ABOUT PAGE*/
+.page {
+	min-height: 30vh;
+	position: relative;
+	background-blend-mode: luminosity;
+}
 .page-contact-section {
 	/* background-color: var(--clr-grey-9); */
 	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
 		url(./assets/images/pages_images/contact-two.webp) 80% 80% / cover no-repeat;
-	min-height: 30vh;
-	position: relative;
+}
+.page-about-section {
+	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
+		url(./assets/images/pages_images/about.webp) 50% 20% / cover no-repeat;
 }
 .page-container {
 	margin-top: 3rem;
-}
-.page-contact-section::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 50vh;
-	background-color: var(--clr-primary-2);
-	z-index: -1;
 }
 .page-container-header {
 	min-height: 20vh;
@@ -797,11 +811,42 @@ PAGES STYLES
 .page-container-header h1 {
 	color: var(--clr-grey-8);
 	margin-bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 1rem 1rem 1rem 3rem;
+	position: relative;
+	z-index: 1;
+}
+.page-container-header h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 5px;
+	height: 100%;
+	background-image: linear-gradient(
+		180deg,
+		rgba(106, 242, 216, 0.7) 17.95%,
+		rgba(30, 119, 165, 0.3) 105.5%
+	);
+	z-index: -1;
 }
 .page-contact-main {
 	background-color: var(--clr-grey-10);
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	position: relative;
+	top: -0.5rem;
+	position: relative;
+}
+.page-contact-main::after {
+	content: "";
+	position: absolute;
+	bottom: -0.5rem;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--clr-grey-10);
+	z-index: -1;
 }
 
 .page-contact-main-header {
@@ -820,9 +865,8 @@ PAGES STYLES
 	position: absolute;
 	left: 0;
 	bottom: 0.3rem;
-	height: 6px;
+	height: 10px;
 	width: 100%;
-	border-radius: var(--radius);
 	background-color: #1e77a59b;
 	z-index: -1;
 }
@@ -921,4 +965,24 @@ PAGES STYLES
 	cursor: pointer;
 	box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 	border-radius: var(--radius);
+}
+
+/* MORE ABOUT-US PAGE STYLES */
+.page-about-section-vision {
+	background-color: var(--clr-white);
+	padding-top: 0.1rem;
+}
+.page-about-main-header {
+	max-width: 40rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.page-about-main-header h2 {
+	text-transform: initial;
+}
+.header-lead {
+	font-size: 1.05rem;
+	text-transform: capitalize;
+	color: #1e77a5;
+	font-weight: 700;
 }

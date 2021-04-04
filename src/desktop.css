@@ -175,17 +175,11 @@ Landscape Resize
 		width: 40rem;
 		left: 7%;
 	}
-	.carousel-indicators {
-		left: 7%;
-	}
 }
 
 @media screen and (min-height: 43.75em) {
 	.carousel-caption {
-		top: 17rem;
-	}
-	.carousel-indicators {
-		top: 37rem;
+		top: 15rem;
 	}
 }
 
@@ -198,9 +192,6 @@ Landscape Resize
 @media screen and (min-height: 62.5em) {
 	.carousel-caption {
 		top: 22rem;
-	}
-	.carousel-indicators {
-		top: 42rem;
 	}
 }
 

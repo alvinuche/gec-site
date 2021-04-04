@@ -3,6 +3,7 @@ import { Route, Switch, useLocation } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
 import { AnimatePresence } from "framer-motion";
 import { layoutStructure } from "./components/apiCore";
 
@@ -22,6 +23,9 @@ function App() {
 					</Route>
 					<Route path="/contact">
 						<Contact />
+					</Route>
+					<Route path="/about-us">
+						<About />
 					</Route>
 				</Switch>
 			</AnimatePresence>

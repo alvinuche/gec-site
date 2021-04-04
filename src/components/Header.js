@@ -23,6 +23,18 @@ const containerVariants = {
 		},
 	},
 };
+const spanVariants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			type: "tween",
+			yoyo: 2,
+		},
+	},
+};
 
 const itemVariants = {
 	hidden: {
@@ -56,12 +68,13 @@ const btnVariants = {
 const Header = () => {
 	return (
 		<header className="carousel">
-			<Carousel interval={5000} controls={false}>
+			<Carousel interval={null} controls={false}>
 				<Carousel.Item interval={8000} className="carousel-item">
 					<div
 						className="carousel-bg"
 						style={{
-							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.6)), url(${build_bg}) center/cover no-repeat`,
+							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.5)), url(${build_bg}) center/cover no-repeat`,
+							backgroundBlendMode: "multiply",
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption container">
@@ -70,7 +83,10 @@ const Header = () => {
 							initial="hidden"
 							animate="visible"
 						>
-							<motion.h1 variants={itemVariants}>
+							<motion.span className="sub-header" variants={spanVariants}>
+								Powering the wheels of Enterprise
+							</motion.span>
+							<motion.h1 variants={itemVariants} className="header-title">
 								global entrepreneurship capital
 							</motion.h1>
 							<motion.div className="p-container" variants={itemVariants}>
@@ -99,6 +115,7 @@ const Header = () => {
 						className="carousel-bg"
 						style={{
 							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.3)), url(${estate_bg}) center/cover no-repeat`,
+							backgroundBlendMode: "multiply",
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption">
@@ -136,6 +153,7 @@ const Header = () => {
 						className="carousel-bg"
 						style={{
 							background: `linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.3)), url(${construction_bg}) center/cover no-repeat`,
+							backgroundBlendMode: "multiply",
 						}}
 					></div>
 					<Carousel.Caption className="carousel-caption">

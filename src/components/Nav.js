@@ -87,7 +87,7 @@ const Nav = () => {
 						<SideHeader navigationHandle={navigationHandle} />
 						<ul className="links">
 							<li onClick={navigationHandle}>
-								<Link to="/" className="link-item">
+								<Link to="/about-us" className="link-item">
 									about
 								</Link>
 							</li>

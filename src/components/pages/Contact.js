@@ -31,7 +31,7 @@ const Contact = () => {
 			animate="visible"
 			exit="exit"
 		>
-			<Layout section="page-contact-section" reset="reset">
+			<Layout section="page-contact-section page" reset="reset">
 				<motion.div className="page-container page--container">
 					<div className="page-container-header">
 						<h1>contact us</h1>
@@ -53,6 +53,7 @@ const Contact = () => {
 
 					<article className="contact-form">
 						<h3>get in touch</h3>
+						<hr />
 						<form action="">
 							<div className="contact-form-group">
 								<label htmlFor="name"></label>
