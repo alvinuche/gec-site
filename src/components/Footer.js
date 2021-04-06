@@ -71,7 +71,7 @@ const Footer = () => {
 										<Link to="/services/construction">construction</Link>
 									</li>
 									<li>
-										<Link to="">building materials</Link>
+										<Link to="/services/procurement">building materials</Link>
 									</li>
 									<li>
 										<Link to="">executive transport</Link>

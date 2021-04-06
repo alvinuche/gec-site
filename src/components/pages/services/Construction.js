@@ -88,25 +88,30 @@ const Construction = () => {
 							</p>
 						</div>
 					</div>
-					<div className="page-estate-data" ref={ref}>
-						{/* {pageEstateData.map(({ title, caption }) => ( */}
+					<div className="key-figure-container">
 						<div>
-							<h2>{thirdCount}+</h2>
-							<h3>Customers</h3>
+							<h2>Key figures</h2>
 						</div>
-						<div>
-							<h2>{count}+</h2>
-							<h3>Buildings Built</h3>
+						<div className="page-estate-data" ref={ref}>
+							{/* {pageEstateData.map(({ title, caption }) => ( */}
+							<div>
+								<h2>{thirdCount}+</h2>
+								<h3>Customers</h3>
+							</div>
+							<div>
+								<h2>{count}+</h2>
+								<h3>Buildings Built</h3>
+							</div>
+							<div>
+								<h2>{secondCount}+</h2>
+								<h3>States</h3>
+							</div>
+							<div>
+								<h2>{fouthCount}+</h2>
+								<h3>Properties</h3>
+							</div>
+							{/* ))} */}
 						</div>
-						<div>
-							<h2>{secondCount}+</h2>
-							<h3>States</h3>
-						</div>
-						<div>
-							<h2>{fouthCount}+</h2>
-							<h3>Properties</h3>
-						</div>
-						{/* ))} */}
 					</div>
 				</div>
 			</Layout>

@@ -25,17 +25,17 @@ import innovation from "../assets/images/pages_images/innovation.svg";
 
 export const servicesData = [
 	{
-		url: "",
+		url: "/services/construction",
 		img: estate,
 		caption: "real estate",
 	},
 	{
-		url: "",
+		url: "/services/construction",
 		img: construction,
 		caption: "construction",
 	},
 	{
-		url: "",
+		url: "/services/procurement",
 		img: material,
 		caption: "building materials",
 	},

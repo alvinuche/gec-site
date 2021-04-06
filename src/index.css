@@ -1018,6 +1018,10 @@ PAGES STYLES
 		url(./assets/images/pages_images/construction.webp) 80% 95% / cover
 			no-repeat;
 }
+.service-page-material {
+	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
+		url(./assets/images/pages_images/materials.webp) 80% 10% / cover no-repeat;
+}
 .service-page-construction-main {
 	background-color: var(--clr-grey-10);
 }
@@ -1035,11 +1039,17 @@ PAGES STYLES
 	color: #0990d3;
 	font-weight: 700;
 }
+.key-figure-container {
+	text-align: center;
+}
+.key-figure-container > div:first-child {
+	/* color: var(--clr-primary-4); */
+	margin: 0 auto 3rem;
+}
 .page-estate-data {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	gap: 1rem 1.5rem;
-	text-align: center;
 }
 .page-estate-data h2 {
 	margin-bottom: 0.5rem;
