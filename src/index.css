@@ -1020,7 +1020,7 @@ PAGES STYLES
 }
 .service-page-material {
 	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
-		url(./assets/images/pages_images/materials.webp) 80% 10% / cover no-repeat;
+		url(./assets/images/pages_images/materials.webp) 80% 1% / cover no-repeat;
 }
 .service-page-construction-main {
 	background-color: var(--clr-grey-10);
@@ -1038,6 +1038,9 @@ PAGES STYLES
 .page-part-container a {
 	color: #0990d3;
 	font-weight: 700;
+}
+.page-part-container .second-header {
+	text-transform: initial;
 }
 .key-figure-container {
 	text-align: center;
