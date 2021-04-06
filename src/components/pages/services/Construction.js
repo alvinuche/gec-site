@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../../Layout";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { containerVariants } from "../../apiCore";
 // import { pageEstateData } from "../../data";
 import { Link } from "react-router-dom";
 import Footer from "../../Footer";
@@ -35,7 +36,12 @@ const Construction = () => {
 		return () => clearInterval(interval);
 	});
 	return (
-		<div>
+		<motion.div
+			variants={containerVariants}
+			initial="hidden"
+			animate="visible"
+			exit="exit"
+		>
 			<Layout section="service-page-construction page-service" reset="reset">
 				<motion.div className="page-container page--container">
 					<div className="page-container-header">
@@ -105,7 +111,7 @@ const Construction = () => {
 				</div>
 			</Layout>
 			<Footer />
-		</div>
+		</motion.div>
 	);
 };
 
