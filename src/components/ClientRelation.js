@@ -11,26 +11,26 @@ import satisfaction from "../assets/images/satisfaction.svg";
 
 const containerVariants = {
 	hidden: {
-		x: "-5000px",
+		x: "-100vw",
 	},
 	visible: {
 		x: 0,
 		transition: {
 			type: "spring",
-			damping: 25,
-			mass: 2,
+			damping: 15,
+			mass: 1,
 			// delay: 1.5,
 			stiffness: 100,
 		},
 	},
 };
 
-const ClientRelation = () => {
+const ClientRelation = ({ clientPageStyle = "client-section" }) => {
 	const [count, setCount] = useState(0);
 	const [secondCount, setsecondCount] = useState(0);
 
 	const { ref, inView } = useInView({
-		threshold: 0.3,
+		threshold: 0.1,
 		triggerOnce: true,
 	});
 
@@ -48,7 +48,7 @@ const ClientRelation = () => {
 
 	return (
 		<Layout
-			section="client-section"
+			section={`client-section ${clientPageStyle}`}
 			reset="reset"
 			containerFluid="container--fluid"
 		>
@@ -76,7 +76,9 @@ const ClientRelation = () => {
 						<figure>
 							<div className="client-card">
 								<img src={efficient} alt={efficient} />
-								<figcaption>Efficient Delivery</figcaption>
+								<figcaption>
+									<h4>Efficient Delivery</h4>
+								</figcaption>
 							</div>
 						</figure>
 					</Zoom>
@@ -91,7 +93,9 @@ const ClientRelation = () => {
 						<figure>
 							<div className="client-card">
 								<img src={trust} alt={trust} />
-								<figcaption>Trusted Clients</figcaption>
+								<figcaption>
+									<h4>Trusted Clients</h4>
+								</figcaption>
 							</div>
 						</figure>
 					</Zoom>
@@ -107,10 +111,14 @@ const ClientRelation = () => {
 							<div className="client-card">
 								<img src={completed} alt={completed} />
 								<figcaption>
-									<span style={{ fontWeight: count === 150 ? 700 : "inherit" }}>
-										{count}+
-									</span>{" "}
-									completed projects
+									<h4>
+										<span
+											style={{ fontWeight: count === 150 ? 700 : "inherit" }}
+										>
+											{count}+
+										</span>{" "}
+										completed projects
+									</h4>
 								</figcaption>
 							</div>
 						</figure>
@@ -127,14 +135,16 @@ const ClientRelation = () => {
 							<div className="client-card">
 								<img src={satisfaction} alt={satisfaction} />
 								<figcaption>
-									<span
-										style={{
-											fontWeight: secondCount === 100 ? 700 : "inherit",
-										}}
-									>
-										{secondCount}%
-									</span>{" "}
-									customer satisfaction
+									<h4>
+										<span
+											style={{
+												fontWeight: secondCount === 100 ? 700 : "inherit",
+											}}
+										>
+											{secondCount}%
+										</span>{" "}
+										customer satisfaction
+									</h4>
 								</figcaption>
 							</div>
 						</figure>

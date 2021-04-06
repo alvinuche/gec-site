@@ -22,7 +22,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer className="footer">
+		<footer className="footer-bottom">
 			<Layout
 				section="footer-section"
 				reset="reset"
@@ -65,10 +65,10 @@ const Footer = () => {
 								<h4>services</h4>
 								<ul>
 									<li>
-										<Link to="">real estate</Link>
+										<Link to="/services/construction">real estate</Link>
 									</li>
 									<li>
-										<Link to="">construction</Link>
+										<Link to="/services/construction">construction</Link>
 									</li>
 									<li>
 										<Link to="">building materials</Link>

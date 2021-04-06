@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
+import Construction from "./components/pages/services/Construction";
 import { AnimatePresence } from "framer-motion";
 import { layoutStructure } from "./components/apiCore";
 
@@ -26,6 +27,9 @@ function App() {
 					</Route>
 					<Route path="/about-us">
 						<About />
+					</Route>
+					<Route path="/services/construction">
+						<Construction />
 					</Route>
 				</Switch>
 			</AnimatePresence>

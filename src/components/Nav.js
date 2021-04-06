@@ -128,13 +128,13 @@ const Nav = () => {
 								<Dropdown dropdownContainer={dropdownContainer} />
 							</li>
 							<li onClick={navigationHandle}>
-								<Link to="/" className="link-item">
-									client relations
+								<Link to="/contact" className="link-item">
+									contact
 								</Link>
 							</li>
 							<li onClick={navigationHandle}>
-								<Link to="/contact" className="link-item">
-									contact
+								<Link to="/" className="link-item">
+									insights
 								</Link>
 							</li>
 							<li onClick={navigationHandle}>

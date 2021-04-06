@@ -1,27 +1,10 @@
 import React from "react";
 import Layout from "../Layout";
 import Footer from "../Footer";
-import { PageContactCard } from "./Cards";
+import { PageCard } from "./Cards";
 import { motion } from "framer-motion";
-
-const containerVariants = {
-	hidden: {
-		x: "100vw",
-	},
-	visible: {
-		x: 0,
-		transition: {
-			type: "spring",
-			stiffness: 40,
-			// delay: 0.5,
-			duration: 1.5,
-		},
-	},
-	exit: {
-		x: "-100vw",
-		transition: { ease: "easeInOut" },
-	},
-};
+import { pageContactData } from "../data";
+import { containerVariants } from "../apiCore";
 
 const Contact = () => {
 	return (
@@ -41,7 +24,7 @@ const Contact = () => {
 			<Layout section="page-contact-main" reset="reset">
 				<div className="page--container">
 					<div className="page-contact-main-header">
-						<h2>How to find Us</h2>
+						<h2 className="page-header">How to find Us</h2>
 						<p>
 							If you have any questions or queries, a member of staff will
 							always be there to help. Feel free to get in touch with us by
@@ -49,7 +32,7 @@ const Contact = () => {
 							as possible.
 						</p>
 					</div>
-					<PageContactCard />
+					<PageCard data={pageContactData} />
 
 					<article className="contact-form">
 						<h3>get in touch</h3>

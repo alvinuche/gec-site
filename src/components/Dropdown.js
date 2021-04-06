@@ -5,10 +5,10 @@ const Dropdown = ({ dropdownContainer }) => {
 	return (
 		<ul className="dropdown-content" ref={dropdownContainer}>
 			<li>
-				<Link to="">real estate</Link>
+				<Link to="/services/construction">real estate</Link>
 			</li>
 			<li>
-				<Link to="">construction</Link>
+				<Link to="/services/construction">construction</Link>
 			</li>
 			<li>
 				<Link to="">building materials</Link>

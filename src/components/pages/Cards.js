@@ -1,10 +1,10 @@
 import React from "react";
-import { pageContactData } from "../data";
+// import { pageContactData } from "../data";
 
-export const PageContactCard = () => {
+export const PageCard = ({ data }) => {
 	return (
 		<div className="page-contact-center contact-center">
-			{pageContactData.map(({ image, title, caption, secondCaption }) => (
+			{data.map(({ image, title, caption, secondCaption }) => (
 				<article className="page-contact" key={title}>
 					<div className="contact-img">
 						<img src={image} alt={title} />

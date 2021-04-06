@@ -17,6 +17,12 @@ import pin from "../assets/images/pages_images/pin.svg";
 import telephone from "../assets/images/pages_images/telephone.svg";
 import location from "../assets/images/pages_images/location.svg";
 
+// PAGE ABOUT DATA
+import integrity from "../assets/images/pages_images/integrity.svg";
+import commitment from "../assets/images/pages_images/commitment.svg";
+import quality from "../assets/images/pages_images/quality.svg";
+import innovation from "../assets/images/pages_images/innovation.svg";
+
 export const servicesData = [
 	{
 		url: "",
@@ -91,5 +97,51 @@ export const pageContactData = [
 		title: "branch location",
 		caption: "32 Nwaoriemkpu Ekwe Isu L.G.A Imo State.",
 		secondCaption: "",
+	},
+];
+
+export const pageAboutData = [
+	{
+		image: integrity,
+		title: "integrity",
+		caption:
+			"We remain true to our founding values of quality, honesty and hard work. We have the highest ethical standards in the industry. We “do the right thing.” GEC is a business based on trust. GEC is consistently associated with the high standards of service, quality, personal attention to clients, and integrity.",
+	},
+	{
+		image: commitment,
+		title: "commitment",
+		caption:
+			"We are proactive in finding solutions for our clients that best achieve their goals. We understand that lasting relationships are the lifeblood of our business so we pay personal attention to our clients by focusing on them as individuals.",
+	},
+	{
+		image: quality,
+		title: "quality",
+		caption:
+			"We are passionate about excellence and doing our work right the first time. Our reputation depends on our delivered value in the eyes of every customer and community.",
+	},
+	{
+		image: innovation,
+		title: "innovation",
+		caption:
+			"We develop and apply world-class technology. We listen, learn, and seek out the best ideas. We attack complacency and continually improve.",
+	},
+];
+
+export const pageEstateData = [
+	{
+		title: 50,
+		caption: "Buildings Built",
+	},
+	{
+		title: 15,
+		caption: "States",
+	},
+	{
+		title: 200,
+		caption: "Customers",
+	},
+	{
+		title: 20,
+		caption: "Properties",
 	},
 ];
