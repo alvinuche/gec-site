@@ -74,13 +74,13 @@ const Footer = () => {
 										<Link to="/services/procurement">building materials</Link>
 									</li>
 									<li>
-										<Link to="">executive transport</Link>
+										<Link to="/services/transport">executive transport</Link>
 									</li>
 									<li>
-										<Link to="">phone accessories</Link>
+										<Link to="/services/pos-phone">phone accessories</Link>
 									</li>
 									<li>
-										<Link to="">POS services</Link>
+										<Link to="/services/pos-phone">POS services</Link>
 									</li>
 								</ul>
 							</div>
@@ -119,7 +119,7 @@ const Footer = () => {
 						<Fade
 							duration={500}
 							direction={"up"}
-							delay={900}
+							delay={700}
 							fraction={0.1}
 							triggerOnce={true}
 						>

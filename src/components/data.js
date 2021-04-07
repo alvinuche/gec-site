@@ -40,17 +40,17 @@ export const servicesData = [
 		caption: "building materials",
 	},
 	{
-		url: "",
+		url: "/services/transport",
 		img: transport,
 		caption: "executive transport",
 	},
 	{
-		url: "",
+		url: "/services/pos-phone",
 		img: phone,
 		caption: "phone accessories",
 	},
 	{
-		url: "",
+		url: "/services/pos-phone",
 		img: pos,
 		caption: "POS services",
 	},
@@ -143,5 +143,20 @@ export const pageEstateData = [
 	{
 		title: 20,
 		caption: "Properties",
+	},
+];
+
+export const pageTransportData = [
+	{
+		title: "OWERRI",
+		caption: "Rochas Market, Worldbank Market.",
+	},
+	{
+		title: "ISU",
+		caption: "Nwaoriemkpu Ekwe.",
+	},
+	{
+		title: "ORLU",
+		caption: "International Market.",
 	},
 ];

@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../Layout";
+import CustomForm from "../CustomForm";
 import Footer from "../Footer";
 import { PageCard } from "./Cards";
 import { motion } from "framer-motion";
@@ -37,42 +38,7 @@ const Contact = () => {
 					<article className="contact-form">
 						<h3>get in touch</h3>
 						<hr />
-						<form action="">
-							<div className="contact-form-group">
-								<label htmlFor="name"></label>
-								<input
-									className="contact-form-control"
-									type="text"
-									placeholder="name"
-									id="name"
-								/>
-
-								<label htmlFor="email"></label>
-								<input
-									className="contact-form-control"
-									type="email"
-									placeholder="email"
-									id="email"
-								/>
-
-								<label htmlFor="number"></label>
-								<input
-									className="contact-form-control"
-									type="number"
-									placeholder="phone number"
-									id="number"
-								/>
-								<textarea
-									className="contact-form-control"
-									name="message"
-									placeholder="message"
-									rows="5"
-								></textarea>
-							</div>
-							<button type="submit" className="contact-submit-btn pages-btn">
-								submit here
-							</button>
-						</form>
+						<CustomForm />
 					</article>
 				</div>
 			</Layout>

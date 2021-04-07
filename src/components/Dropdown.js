@@ -14,13 +14,13 @@ const Dropdown = ({ dropdownContainer }) => {
 				<Link to="/services/procurement">building materials</Link>
 			</li>
 			<li>
-				<Link to="">executive transport</Link>
+				<Link to="/services/transport">executive transport</Link>
 			</li>
 			<li>
-				<Link to="">phone accessories</Link>
+				<Link to="/services/pos-phone">phone accessories</Link>
 			</li>
 			<li>
-				<Link to="">POS servises</Link>
+				<Link to="/services/pos-phone">POS servises</Link>
 			</li>
 		</ul>
 	);

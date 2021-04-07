@@ -55,7 +55,7 @@ const Intro = () => {
 							populace.
 						</p>
 						<div className="intro-link-container">
-							<Link to="" className="intro-link">
+							<Link to="/about-us" className="intro-link">
 								Read More
 							</Link>
 							<span className="arrow-container">

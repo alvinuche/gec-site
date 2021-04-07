@@ -186,7 +186,29 @@ a:hover {
 .sub-heading {
 	margin-bottom: 1rem;
 }
+.top-link {
+	font-size: 1rem;
+	padding: 0.5rem;
+	position: fixed;
+	bottom: 3rem;
+	right: 2rem;
+	background: var(--clr-primary-1);
+	width: 2.5rem;
+	height: 2.5rem;
+	display: grid;
+	place-items: center;
+	border-radius: var(--radius);
+	color: var(--clr-white);
+	transition: var(--transition);
+	/* animation: bounce 2s ease-in-out infinite; */
 
+	visibility: hidden;
+	z-index: -100;
+}
+.show-link {
+	visibility: visible;
+	z-index: 100;
+}
 /*
 =============== 
 Layout
@@ -222,6 +244,15 @@ header {
 	width: 100%;
 	position: absolute;
 	z-index: 10;
+}
+.fixed-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: var(--light-shadow);
+	transition: all 0.5s linear;
 }
 .nav-header {
 	display: flex;
@@ -1022,8 +1053,17 @@ PAGES STYLES
 	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
 		url(./assets/images/pages_images/materials.webp) 80% 1% / cover no-repeat;
 }
+.service-page-transport {
+	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
+		url(./assets/images/pages_images/transport.webp) 80% 20% / cover no-repeat;
+}
+.service-page-pos {
+	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
+		url(./assets/images/pages_images/POS.webp) 40% 50% / cover no-repeat;
+}
 .service-page-construction-main {
 	background-color: var(--clr-grey-10);
+	padding-bottom: 1.5rem;
 }
 .page-part {
 	display: grid;
@@ -1057,4 +1097,7 @@ PAGES STYLES
 .page-estate-data h2 {
 	margin-bottom: 0.5rem;
 	color: var(--clr-primary-4);
+}
+.transport-container p {
+	font-size: 1.3rem;
 }

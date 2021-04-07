@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../../Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { containerVariants } from "../../apiCore";
 import Footer from "../../Footer";
+import { containerVariants } from "../../apiCore";
 
 const Materials = () => {
 	return (
@@ -46,10 +46,7 @@ const Materials = () => {
 							<h3 className="second-header">We deliver</h3>
 							<ul>
 								<li>
-									<p>
-										Innovative supply chain solutions to complex execution, such
-										as industry-leading RFID deployment at large sites.
-									</p>
+									<p>Innovative supply chain solutions to complex execution.</p>
 								</li>
 								<li>
 									<p>

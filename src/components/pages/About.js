@@ -36,7 +36,7 @@ const About = () => {
 						</p>
 						<p>
 							We continue to improve on our services in Real Estate,
-							Construction, Transportation and Building materials distribution.
+							Construction, Transportation, and Building materials distribution.
 							In line with our mission, we will continue to act as a medium
 							between producers/manufacturers and the populace.
 						</p>
