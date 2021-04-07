@@ -21,7 +21,7 @@ const aboutVariants = {
 };
 
 const Intro = () => {
-	const { ref, inView, entry } = useInView({
+	const { ref, inView } = useInView({
 		threshold: 0.3,
 		triggerOnce: true,
 	});

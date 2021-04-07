@@ -29,7 +29,7 @@ export const TopLink = () => {
 
 	return (
 		<p
-			class="scroll-link top-link"
+			className="scroll-link top-link"
 			ref={topLink}
 			onClick={() => {
 				if (typeof window !== "undefined") {

@@ -187,7 +187,6 @@ a:hover {
 	margin-bottom: 1rem;
 }
 .top-link {
-	font-size: 1rem;
 	padding: 0.5rem;
 	position: fixed;
 	bottom: 3rem;
@@ -198,14 +197,15 @@ a:hover {
 	display: grid;
 	place-items: center;
 	border-radius: var(--radius);
+	cursor: pointer;
 	color: var(--clr-white);
 	transition: var(--transition);
-	/* animation: bounce 2s ease-in-out infinite; */
-
+	transform: scale(0);
 	visibility: hidden;
 	z-index: -100;
 }
 .show-link {
+	transform: scale(1);
 	visibility: visible;
 	z-index: 100;
 }
@@ -825,13 +825,20 @@ PAGES STYLES
 	background-blend-mode: luminosity;
 }
 .page-contact-section {
-	/* background-color: var(--clr-grey-9); */
 	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
 		url(./assets/images/pages_images/contact-two.webp) 80% 80% / cover no-repeat;
 }
 .page-about-section {
 	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
 		url(./assets/images/pages_images/about.webp) 50% 20% / cover no-repeat;
+}
+.page-blog-section {
+	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
+		url(./assets/images/pages_images/blog.webp) 80% 80% / cover no-repeat;
+}
+.page-faq-section {
+	background: linear-gradient(rgba(4, 16, 16, 0.9), rgba(4, 16, 16, 0.1)),
+		url(./assets/images/pages_images/FAQ.webp) 80% 80% / cover no-repeat;
 }
 .page-container {
 	margin-top: 3rem;

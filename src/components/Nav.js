@@ -112,7 +112,9 @@ const Nav = () => {
 								</li>
 								<li className="dropdown reset" onClick={dropdownHandle}>
 									<div className="dropdown--container">
-										<Link className="link-item">services</Link>
+										<Link to="#" className="link-item">
+											services
+										</Link>
 										<span className="dropdown-icon">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
@@ -150,12 +152,12 @@ const Nav = () => {
 									</Link>
 								</li>
 								<li onClick={navigationHandle}>
-									<Link to="/" className="link-item">
+									<Link to="/blog" className="link-item">
 										insights
 									</Link>
 								</li>
 								<li onClick={navigationHandle}>
-									<Link to="/" className="link-item">
+									<Link to="/faq" className="link-item">
 										FAQ
 									</Link>
 								</li>

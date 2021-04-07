@@ -8,6 +8,8 @@ import Construction from "./components/pages/services/Construction";
 import Materials from "./components/pages/services/Materials";
 import Transport from "./components/pages/services/Transport";
 import Pos from "./components/pages/services/Pos";
+import Blog from "./components/pages/Blog";
+import Faq from "./components/pages/Faq";
 import { TopLink } from "./components/apiCore";
 import { AnimatePresence } from "framer-motion";
 import { layoutStructure } from "./components/apiCore";
@@ -44,6 +46,12 @@ function App() {
 					</Route>
 					<Route path="/services/pos-phone">
 						<Pos />
+					</Route>
+					<Route path="/blog">
+						<Blog />
+					</Route>
+					<Route path="/faq">
+						<Faq />
 					</Route>
 				</Switch>
 			</AnimatePresence>
