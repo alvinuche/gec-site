@@ -189,8 +189,8 @@ a:hover {
 .top-link {
 	padding: 0.5rem;
 	position: fixed;
-	bottom: 3rem;
-	right: 2rem;
+	bottom: 5rem;
+	right: 1.5rem;
 	background: var(--clr-primary-1);
 	width: 2.5rem;
 	height: 2.5rem;

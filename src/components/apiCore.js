@@ -15,7 +15,7 @@ export const TopLink = () => {
 
 	const handleScroll = () => {
 		setScrollHeight(window.pageYOffset);
-		if (scrollHeight > 500) {
+		if (scrollHeight > 250) {
 			topLink.current.classList.add("show-link");
 		} else {
 			topLink.current.classList.remove("show-link");
@@ -56,7 +56,9 @@ export const containerVariants = {
 			type: "spring",
 			stiffness: 40,
 			// delay: 0.5,
-			duration: 1.5,
+			duration: 0.5,
+			when: "beforeChildren",
+			staggerChildren: 0.2,
 		},
 	},
 	exit: {

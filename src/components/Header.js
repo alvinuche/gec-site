@@ -30,8 +30,9 @@ const spanVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			type: "tween",
-			yoyo: 2,
+			// type: "tween",
+			repeat: 2,
+			repeatType: "mirror",
 		},
 	},
 };
