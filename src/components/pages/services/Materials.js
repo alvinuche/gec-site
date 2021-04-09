@@ -6,6 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 import Footer from "../../Footer";
 import { containerVariants } from "../../apiCore";
+import ClientRelation from "../../ClientRelation";
 
 const Materials = () => {
 	return (
@@ -116,6 +117,7 @@ const Materials = () => {
 					</div>
 				</div>
 			</Layout>
+			<ClientRelation clientPageStyle="client-section-page" />
 			<Footer />
 		</motion.div>
 	);

@@ -22,14 +22,17 @@ const About = () => {
 			exit="exit"
 		>
 			<Layout section="page-about-section page" reset="reset">
-				<motion.div
-					variants={containerVariants}
+				<div
+					// variants={containerVariants}
 					className="page-container page--container"
 				>
-					<div className="page-container-header">
+					<motion.div
+						// variants={containerVariants}
+						className="page-container-header"
+					>
 						<h1>About GEC</h1>
-					</div>
-				</motion.div>
+					</motion.div>
+				</div>
 			</Layout>
 			<Layout section="page-about-section-vision" reset="reset">
 				<Fade

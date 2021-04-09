@@ -23,8 +23,8 @@ function App() {
 	return (
 		<>
 			<Nav />
-			<TopLink />
 			<AnimatePresence exitBeforeEnter>
+				<TopLink />
 				<Switch location={location} key={location.key}>
 					<Route exact path="/">
 						<Home />

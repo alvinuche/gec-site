@@ -103,28 +103,32 @@ const Construction = () => {
 							</div>
 						</Fade>
 					</div>
-					<div className="key-figure-container">
+					<div className="key-figure-container" ref={ref}>
 						<div>
 							<h2>Key figures</h2>
 						</div>
-						<div className="page-estate-data" ref={ref}>
+						<div className="page-estate-data">
 							{/* {pageEstateData.map(({ title, caption }) => ( */}
-							<div>
-								<h2>{thirdCount}+</h2>
-								<h3>Customers</h3>
-							</div>
-							<div>
-								<h2>{count}+</h2>
-								<h3>Buildings Built</h3>
-							</div>
-							<div>
-								<h2>{secondCount}+</h2>
-								<h3>States</h3>
-							</div>
-							<div>
-								<h2>{fouthCount}+</h2>
-								<h3>Properties</h3>
-							</div>
+							{inView && (
+								<>
+									<div>
+										<h2>{thirdCount}+</h2>
+										<h3>Customers</h3>
+									</div>
+									<div>
+										<h2>{count}+</h2>
+										<h3>Buildings Built</h3>
+									</div>
+									<div>
+										<h2>{secondCount}+</h2>
+										<h3>States</h3>
+									</div>
+									<div>
+										<h2>{fouthCount}+</h2>
+										<h3>Properties</h3>
+									</div>
+								</>
+							)}
 							{/* ))} */}
 						</div>
 					</div>

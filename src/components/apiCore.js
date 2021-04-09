@@ -13,19 +13,18 @@ export const TopLink = () => {
 	const [scrollHeight, setScrollHeight] = useState(window.pageYOffset);
 	const topLink = useRef(null);
 
-	const handleScroll = () => {
-		setScrollHeight(window.pageYOffset);
-		if (scrollHeight > 250) {
-			topLink.current.classList.add("show-link");
-		} else {
-			topLink.current.classList.remove("show-link");
-		}
-	};
-
 	useEffect(() => {
+		const handleScroll = () => {
+			setScrollHeight(window.pageYOffset);
+			if (scrollHeight > 400) {
+				topLink.current.classList.add("show-link");
+			} else {
+				topLink.current.classList.remove("show-link");
+			}
+		};
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
-	});
+	}, [scrollHeight]);
 
 	return (
 		<p

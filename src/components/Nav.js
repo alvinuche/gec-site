@@ -44,22 +44,22 @@ const Nav = () => {
 		setWindowWidth(window.innerWidth);
 	};
 
-	const handleScroll = () => {
-		const getNavHeight = navHeight.current.getBoundingClientRect().height + 20;
-		setScrollHeight(window.pageYOffset);
-		if (scrollHeight > getNavHeight) {
-			navHeight.current.style.position = "fixed";
-			navHeight.current.classList.add("fixed-nav");
-		} else {
-			navHeight.current.style.position = "fixed";
-			navHeight.current.classList.remove("fixed-nav");
-		}
-	};
-
 	useEffect(() => {
+		const handleScroll = () => {
+			const getNavHeight =
+				navHeight.current.getBoundingClientRect().height + 20;
+			setScrollHeight(window.pageYOffset);
+			if (scrollHeight > getNavHeight) {
+				navHeight.current.style.position = "fixed";
+				navHeight.current.classList.add("fixed-nav");
+			} else {
+				navHeight.current.style.position = "fixed";
+				navHeight.current.classList.remove("fixed-nav");
+			}
+		};
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
-	});
+	}, [scrollHeight]);
 
 	useEffect(() => {
 		const node = dropdownContainer.current;

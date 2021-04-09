@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { containerVariants } from "../../apiCore";
 import { Fade } from "react-awesome-reveal";
 import Footer from "../../Footer";
+import ClientRelation from "../../ClientRelation";
 
 const Pos = () => {
 	return (
@@ -53,6 +54,7 @@ const Pos = () => {
 					</div>
 				</div>
 			</Layout>
+			<ClientRelation clientPageStyle="client-section-page" />
 			<Footer />
 		</motion.div>
 	);
