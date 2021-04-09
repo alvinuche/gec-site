@@ -1,10 +1,10 @@
 // OUR SERVICES DATA
-import estate from "../assets/images/estate.jpg";
-import construction from "../assets/images/construction.jpg";
-import material from "../assets/images/material.jpg";
-import transport from "../assets/images/transport.jpg";
-import phone from "../assets/images/phone.jpg";
-import pos from "../assets/images/pos.jpg";
+import estate from "../assets/images/estate.webp";
+import construction from "../assets/images/construction.webp";
+import material from "../assets/images/material.webp";
+import transport from "../assets/images/transport.webp";
+import phone from "../assets/images/phone.webp";
+import pos from "../assets/images/pos.webp";
 
 // CLIENT RELATION DATA
 import completed from "../assets/images/completed.svg";

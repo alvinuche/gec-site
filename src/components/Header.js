@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Carousel } from "react-bootstrap";
 // import home_bg from "../assets/images/home-bg-lg.jpg";
-import build_bg from "../assets/images/build-bg.jpg";
-import estate_bg from "../assets/images/estate-bg-lg.jpg";
-import construction_bg from "../assets/images/construction-bg-lg.jpg";
+import build_bg from "../assets/images/build-bg.webp";
+import estate_bg from "../assets/images/estate-bg-lg.webp";
+import construction_bg from "../assets/images/construction-bg-lg2.webp";
 import { Fade } from "react-awesome-reveal";
 
 const containerVariants = {
