@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
+import SiteIntro from "./components/SiteIntro";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Contact from "./components/pages/Contact";
@@ -15,16 +16,24 @@ import { AnimatePresence } from "framer-motion";
 import { layoutStructure } from "./components/apiCore";
 
 function App() {
+	const [isVisible, setIsVisible] = useState(true);
 	const location = useLocation();
+
+	useEffect(() => {
+		const interval = setInterval(() => setIsVisible(false), 5000);
+		return () => clearInterval(interval);
+	}, []);
 
 	useEffect(() => {
 		layoutStructure();
 	});
-	return (
+	return isVisible ? (
+		<SiteIntro path="/" />
+	) : (
 		<>
 			<Nav />
 			<AnimatePresence exitBeforeEnter>
-				<TopLink />
+				<TopLink key="topLink" />
 				<Switch location={location} key={location.key}>
 					<Route exact path="/">
 						<Home />

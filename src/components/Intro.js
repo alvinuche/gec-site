@@ -51,8 +51,7 @@ const Intro = () => {
 						</p>
 						<p>
 							The core business focus of the Group, which started operations in
-							1988, is to act as a medium between the producers and the
-							populace.
+							1988, is to act as a medium between producers and the populace.
 						</p>
 						<div className="intro-link-container">
 							<Link to="/about-us" className="intro-link">
