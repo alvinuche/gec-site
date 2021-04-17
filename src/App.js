@@ -21,7 +21,7 @@ function App() {
 	const location = useLocation();
 
 	useEffect(() => {
-		const interval = setInterval(() => setIsVisible(true), 5000);
+		const interval = setInterval(() => setIsVisible(false), 5000);
 		return () => clearInterval(interval);
 	}, []);
 
@@ -29,9 +29,9 @@ function App() {
 		layoutStructure();
 	});
 	return isVisible ? (
-		<Maintenance path="/" />
+		// <Maintenance path="/" />
+		<SiteIntro path="/" />
 	) : (
-		// <SiteIntro path="/" />
 		<>
 			<Nav />
 			<AnimatePresence exitBeforeEnter>
