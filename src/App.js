@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 import SiteIntro from "./components/SiteIntro";
-import Maintenance from "./components/SiteIntroTwo";
+// import Maintenance from "./components/SiteIntroTwo";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Contact from "./components/pages/Contact";
