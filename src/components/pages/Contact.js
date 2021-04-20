@@ -33,7 +33,7 @@ const Contact = () => {
 						damping={0.3}
 						duration={1000}
 						direction={"up"}
-						delay={1000}
+						delay={500}
 						// fraction={1}
 						triggerOnce={true}
 					>

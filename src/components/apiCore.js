@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-
 import upArrow from "../assets/images/up-arrow.svg";
 
 export const layoutStructure = () => {
